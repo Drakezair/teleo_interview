@@ -1,10 +1,9 @@
-// useScreenshots.ts
 import { useQuery } from 'react-query';
 import axios from 'axios';
 import { PaginatedResponse } from '../interfaces/Screenshot';
 
 
-const fetchScreenshots = async (page: number, limit: number): Promise<PaginatedResponse> => {
+export const fetchScreenshots = async (page: number, limit: number): Promise<PaginatedResponse> => {
   const query = `
     query GetPaginatedScreenshots($page: Int!, $limit: Int!) {
       getScreenshots(page: $page, limit: $limit) {

@@ -1,4 +1,3 @@
-// ScreenshotsList.tsx
 import React, { useState } from 'react';
 import { useScreenshotsList } from '../hooks';
 
